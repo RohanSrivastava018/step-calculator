@@ -1,8 +1,18 @@
-.header {
-    align-self: left;
-    color: aliceblue;
-}
-
-.step-count {
-    color: aliceblue;
-}
+.result-wrapper {
+    text-align: center;
+  }
+  
+  .step-info {
+    margin-bottom: 10px;
+  }
+  
+  .step-count {
+    font-size: 1.5em;
+    color: white; 
+    padding-left: 5px;
+  }
+  
+  .steps-per-min h3 {
+    margin: 0;
+  }
+  

@@ -10,7 +10,8 @@ const ActivityInput = ({ activities, selectedActivity, onActivityChange }) => {
 
   return (
     <div className='activity-input-wrapper'>
-      <label>Activity:</label>
+      <label className='activity-label'><strong>Activity:</strong></label>
+      <br />
       <div className="input">
             <Select
                 options={options}

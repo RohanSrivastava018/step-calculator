@@ -1,22 +1,22 @@
 import React from 'react';
 import './timeinput.css';
 
-const TimeInput = ({ hours, minutes, onHourChange, onMinuteChange }) => {
+const TimeInput = ({ hours, minutes, onHourChange, onMinuteChange, handleInputFocusMinutes, handleInputBlurMinutes, handleInputBlurHour, handleInputFocusHour }) => {
   return (
     <div className='input-wrapper'>
-        <div>
-            <label>Hours:</label>
+        <div className='hour-wrapper'>
+            <label className="time-label" htmlFor="hours"><strong>Hours:</strong></label>
             <br />
             <div className="input">
-                <input type="number" value={hours} onChange={onHourChange} />
+                <input className='input-box' id='hours' type="number" onFocus={handleInputFocusHour} onBlur={handleInputBlurHour} value={hours} onChange={onHourChange} />
             </div>
         </div>
-        <div>
+        <div className='minute-wrapper'>
             <br />
-            <label>Minutes:</label>
+            <label className="time-label" htmlFor="minutes"><strong>Minutes:</strong></label>
             <br />
             <div className="input">
-                <input type="number" value={minutes} onChange={onMinuteChange} />
+                <input className='input-box' id='minutes' type="number" onFocus={handleInputFocusMinutes} onBlur={handleInputBlurMinutes} value={minutes} onChange={onMinuteChange} />
             </div>
         </div>
         

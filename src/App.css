@@ -7,15 +7,16 @@
   vertical-align: center;
   justify-content: center;
   height: 50vh;
-  background-color: #f0f0f0;
-  padding: 50px 100px;
   border-radius: 50px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 20px 40px black;
   max-width: 500px;
   margin: 0 auto;
   background-color: #d64040;
 }
 
+.title :hover {
+  color: white;
+}
 
 .activity-input {
   width: 200px;
@@ -36,6 +37,42 @@
 .result {
   margin-top: 20px;
   font-size: 24px;
+}
+
+.calculate-button {
+  background-color: #0056b3;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.calculate-button:hover {
+  background-color: white;
+  color: black;
+
+}
+
+.time-label.hover,
+.time-label:focus-within {
+  color: white;
+}
+
+.activity-input-wrapper:hover .activity-label,
+.activity-input-wrapper:focus-within .activity-label {
+  color: white;
+}
+
+.hour-wrapper:hover .time-label,
+.hour-wrapper:focus-within .time-label {
+  color: white;
+}
+
+.minute-wrapper:hover .time-label,
+.minute-wrapper:focus-within .time-label {
+  color: white;
 }
 
 body, html {

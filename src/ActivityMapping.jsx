@@ -1,5 +1,5 @@
 const activityStepMapping = {
-    'Select an activity...': 0,
+    'Search activity...': 0,
     'Aerobic Dancing Class': 127,
     'Aerobic fitness class': 181,
     'Aerobics, low impact': 125,

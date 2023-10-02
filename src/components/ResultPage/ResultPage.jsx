@@ -1,12 +1,14 @@
 import React from 'react';
 import './resultpage.css'
 
-const ResultPage = ({ stepCount }) => {
+const ResultPage = ({ stepCount, stepsPerMin }) => {
   return (
     <div className='result-wrapper'>
-      <h2>Total Steps:</h2>
-      <div className="step-count">
-        <h2>{stepCount}</h2>
+      <div className="step-info">
+        <h2>Total Steps: <span className="step-count">{stepCount}</span></h2>
+      </div>
+      <div className="steps-per-min">
+        <h3>{stepsPerMin} steps/min</h3>
       </div>
     </div>
   );
