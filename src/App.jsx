@@ -30,16 +30,19 @@ const App = () => {
   };
 
   const calculateSteps = () => {
-    if (activity === 'Select an activity...' ) {
-      alert('Please select an activity!')
-      return
+    if (activity === 'Select an activity...') {
+      alert('Please select an activity!');
+      return;
     }
-    setContainerPadding(stepCount !== null ? '100px 100px': '50px 100px');
+    setContainerPadding(stepCount !== null ? '100px 100px' : '50px 100px');
     if (stepsPerMin != null) {
-      if (hours === 0 & minutes === 0) {
+      const hoursCalc = isNaN(hours) || hours === '' ? 0 : parseInt(hours);
+      const minutesCalc = isNaN(minutes) || minutes === '' ? 0 : parseInt(minutes);
+  
+      if (hoursCalc === 0 && minutesCalc === 0) {
         alert('Please enter time!');
       } else {
-        const steps = (hours * 60 + parseInt(minutes)) * stepsPerMin;
+        const steps = (hoursCalc * 60 + minutesCalc) * stepsPerMin;
         setStepCount(steps.toLocaleString());
       }
     } else {

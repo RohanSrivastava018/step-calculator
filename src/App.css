@@ -8,10 +8,15 @@
   justify-content: center;
   height: 50vh;
   border-radius: 50px;
-  box-shadow: 0px 20px 40px black;
+  box-shadow: 0px 15px 30px black;
   max-width: 500px;
   margin: 0 auto;
   background-color: #d64040;
+  transition: box-shadow 0.3s;
+}
+
+.container:hover {
+  box-shadow: 0px 30px 60px black; /* Add box shadow on hover */
 }
 
 .title :hover {
@@ -83,4 +88,49 @@ body, html {
   align-items: center;
   font-family: Poppins, sans-serif;
   background-color: #17578f;
+}
+
+@media (max-width: 600px) {
+  /* Apply these styles only when the screen width is 600px or less (e.g., on phones) */
+  .container {
+    padding: 5px; /* Adjust padding for smaller screens */
+    max-width: 100px; /* Reduce maximum width for smaller screens */
+  }
+
+  .container.result-active {
+    padding: 30px;
+    min-height: 350px;
+  }
+
+  h1 {
+    padding-bottom: 0px;
+    text-align: center;
+    font-size: 1.8em; /* Adjust the font size for h1 */
+  }
+
+  h2 {
+    font-size: 1.5em; /* Adjust the font size for h1 */
+  }
+
+  label, input, select, button {
+    font-size: 0.8em; /* Adjust the font size for labels, inputs, selects, and buttons */
+    margin: 0px 0;
+  }
+
+  .step-count {
+    font-size: 1.5em; /* Adjust the font size for the step count */
+  }
+
+
+  .activity-input {
+    padding: 0%;
+  }
+
+  button {
+    width: 200%;
+  }
+
+  .result-wrapper {
+    width: 150%;
+  }
 }
