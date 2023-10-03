@@ -90,16 +90,37 @@ body, html {
   background-color: #17578f;
 }
 
+@media (max-height: 380px) {
+  .container {
+    padding: 5px; /* Adjust padding for smaller screens */
+    max-width: 100px; /* Reduce maximum width for smaller screens */
+    min-height: 300px;
+  }
+
+  .container.result-active {
+    padding: 30px;
+    min-height: 450px;
+  }
+}
+
+
 @media (max-width: 600px) {
   /* Apply these styles only when the screen width is 600px or less (e.g., on phones) */
   .container {
     padding: 5px; /* Adjust padding for smaller screens */
     max-width: 100px; /* Reduce maximum width for smaller screens */
+    min-height: 300px;
   }
 
   .container.result-active {
     padding: 30px;
-    min-height: 350px;
+    min-height: 400px;
+  }
+
+  .title {
+    padding-top: 0;
+    margin-top: 0;
+    width: 300%
   }
 
   h1 {
