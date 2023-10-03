@@ -12,15 +12,17 @@
   max-width: 500px;
   margin: 0 auto;
   background-color: #d64040;
+  border: 4px solid white;
   transition: box-shadow 0.3s;
 }
 
 .container:hover {
-  box-shadow: 0px 30px 60px black; /* Add box shadow on hover */
+  box-shadow: 0px 30px 60px black;
 }
 
 .title :hover {
   color: white;
+
 }
 
 .activity-input {
@@ -52,12 +54,13 @@
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+  border: 2px solid white;
 }
 
 .calculate-button:hover {
   background-color: white;
   color: black;
-
+  border: 2px solid black;
 }
 
 .time-label.hover,
@@ -92,8 +95,8 @@ body, html {
 
 @media (max-height: 380px) {
   .container {
-    padding: 5px; /* Adjust padding for smaller screens */
-    max-width: 100px; /* Reduce maximum width for smaller screens */
+    padding: 5px;
+    max-width: 100px;
     min-height: 300px;
   }
 
@@ -105,10 +108,10 @@ body, html {
 
 
 @media (max-width: 600px) {
-  /* Apply these styles only when the screen width is 600px or less (e.g., on phones) */
+  
   .container {
-    padding: 5px; /* Adjust padding for smaller screens */
-    max-width: 100px; /* Reduce maximum width for smaller screens */
+    padding: 5px; 
+    max-width: 100px;
     min-height: 300px;
   }
 
@@ -126,20 +129,19 @@ body, html {
   h1 {
     padding-bottom: 0px;
     text-align: center;
-    font-size: 1.8em; /* Adjust the font size for h1 */
+    font-size: 1.8em;
   }
 
   h2 {
-    font-size: 1.5em; /* Adjust the font size for h1 */
+    font-size: 1.5em;
   }
 
   label, input, select, button {
-    font-size: 0.8em; /* Adjust the font size for labels, inputs, selects, and buttons */
-    margin: 0px 0;
+    font-size: 0.8em;
   }
 
   .step-count {
-    font-size: 1.5em; /* Adjust the font size for the step count */
+    font-size: 1.5em; 
   }
 
 
